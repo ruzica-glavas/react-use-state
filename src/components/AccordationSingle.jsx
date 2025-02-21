@@ -11,9 +11,16 @@ const AccordationSingle = (props)=>{
     return (
         <>
         <div className = "card-body">
-            <button className="btn btn-primary" onClick={handleAccordation}>{title}</button>
+                <div className="btn">
+                    <button className="btn btn-primary" onClick={handleAccordation}>{title}</button>
+                </div>
+                <div className="container-description">
+                    {isOpen && <div className="description">{description}</div>}{/* se isOpen é su true si mostra la descrizione se no, niente*/}
+                </div>
          </div>
-         {isOpen && <div>{description}</div>}  {/* se isOpen é su true si mostra la descrizione se no, niente*/}
+
+        
+          
     </>
     )
 }

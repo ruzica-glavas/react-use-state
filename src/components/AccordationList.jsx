@@ -35,9 +35,11 @@ const languages = [
 
 const AccordationsList = () => {
     return(
-      <div className="card">
-          <h5 className="card-title">Learn Web Development</h5>
-          
+      <>
+        
+      <h5 className="card-title">Learn Web Development</h5>
+
+      <div className="card"> 
         {
           languages.map((element =>{
            return(<AccordationSingle key={element.id} language={element}/>
@@ -49,7 +51,7 @@ const AccordationsList = () => {
         }     
           
       </div>
-
+      </>
       
     )
 }
